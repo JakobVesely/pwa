@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public alertController: AlertController) {}
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'Impressum',
+      message: 'AppArtig e.U.<br>Neubaugasse 17<br>3133 Gemeinlebarn',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
 
 }

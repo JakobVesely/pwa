@@ -1,20 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      PWA Sample
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentAlert()">
+        <ion-icon slot="icon-only" name="information-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="center ion-padding">
+    <h1>🚀</h1>
+    <h2>Bereit für eine neue Technologie?</h2>
+    <p>Jetzt mit <a target="_blank" rel="noopener noreferrer" href="https://www.appartig.at">AppArtig</a> die neuesten Generation an platformunabhängigen Apps kennlernen!</p>
+    
+    <div class="contact-line">
+      <ion-button shape="round" color="primary contact-icon" href="mailto:office@appartig.at">
+        <ion-icon slot="icon-only" name="mail"></ion-icon>
+      </ion-button>
+      <ion-button shape="round" color="primary contact-icon" href="tel:00436605114063">
+        <ion-icon slot="icon-only" name="call"></ion-icon>
+      </ion-button>
+      <ion-button shape="round" color="primary contact-icon" href="https://www.appartig.at" target="_blank">
+        <ion-icon slot="icon-only" name="earth"></ion-icon>
+      </ion-button>
+    </div>
   </div>
 </ion-content>
